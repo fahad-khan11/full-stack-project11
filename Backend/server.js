@@ -27,6 +27,7 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json());
 app.use(cookieParser());
 
+
 app.use('/users',userRoutes)
 app.use('/products',productRoutes)
 app.use('/cart',cartRoutes)
@@ -39,6 +40,10 @@ app.use('/subscribe',subscribeRoutes)
 app.use('/admin',adminRoutes)
 app.use('/admin',producAdmintRoutes)
 app.use('/admin',adminOrderRoutes)
+
+app.get('/',(req,res)=>{
+    res.send("API is running")
+})
 
 
 app.listen(PORT,()=>{
