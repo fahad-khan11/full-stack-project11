@@ -48,7 +48,7 @@ const MyOrderPage = () => {
             <h2 className='text-xl sm:text-2xl font-bold mb-6'>
                 My Orders
             </h2>
-            <div className='relative shadow-md sm:rounded-lg overflow-hidden'>
+            <div className='relative shadow-md sm:rounded-lg overflow-x-auto'>
                 <table className='min-w-full text-left text-gray-500'>
                     <thead className='bg-gray-100 text-xs uppercase text-gray-700'>
                         <tr>
