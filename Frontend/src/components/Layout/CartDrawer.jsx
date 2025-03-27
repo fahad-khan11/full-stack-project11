@@ -35,6 +35,7 @@ const CartDrawer = ({ drawerOpen, toggleCartDrawer }) => {
   const clearCart = () => {
     localStorage.removeItem("cart");
     console.log("Cart cleared!");
+    setLocalCart({ products: [] });
   };
 
   const handleCheckout = () => {
